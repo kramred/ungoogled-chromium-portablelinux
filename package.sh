@@ -11,7 +11,7 @@ _tarprefix=ungoogled-chromium_$_chromium_version-$_ungoogled_revision.${_package
 _archive_output="$_root_dir/build/$_tarprefix.tar.xz"
 
 "$_root_dir/ungoogled-chromium/utils/filescfg.py" \
-	-c "$_root_dir/build/src/chrome/tools/build/linux/FILES.cfg" \
+	-c "$_root_dir/FILES.cfg" \
 	--build-outputs "$_root_dir/build/src/out/Default" \
 	archive \
 	-o "$_archive_output" \
